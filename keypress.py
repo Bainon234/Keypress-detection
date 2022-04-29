@@ -9,11 +9,10 @@ def on_press(key):
     except:
         k = key.name  # other keys
     
-    if k in ['w','a','s','d']:
-      if not k == ['']:
-          f.write(k)
-          f.close()
-      return False
+    if not k == ['']:
+        f.write(k)
+        f.close()
+        return False
 
 listener = keyboard.Listener(on_press=on_press)
 listener.start()
