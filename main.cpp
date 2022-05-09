@@ -1,11 +1,9 @@
 #include "incl.hpp"
 #include "logic.hpp"
 int main() {
-  game game;
+  interact keyboard;
   while (1){ 
-    system("python keypress.py");
-    game.returnkey();
-    game.player_moves();
+    keyboard.returnkey();
     }
   return 0;
 }
